@@ -1,0 +1,15 @@
+{
+  "name": "mealify",
+  "version": "1.0.0",
+  "description": "MEALIFY - Premium 3D Neo-Futuristic Food Delivery Platform",
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run start",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"yellow,cyan\" \"npm run server\" \"npm run client\"",
+    "seed": "npm --prefix server run seed",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
